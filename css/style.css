@@ -1187,21 +1187,17 @@ iframe {
 
   /* ===スマホ用動画=== */
 /* 動画自体のサイズをスマホに最適化（今のままだとPC用の計算式でズレるため） */
-  #video {
-    width: 100vw;
-    height: 100svh;
-    min-width: auto;
-    min-height: auto;
-    
-    /* 縦長画面を隙間なく埋める設定 */
-    object-fit: cover;
-    
-    /* 配置を中央に固定 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  #video-frame{
+  padding: 0;
+}
+
+#video {
+  /*天地中央配置*/
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+}
+
 
   /* ==応募の流れ== */
   #flow .flow-text h3 {

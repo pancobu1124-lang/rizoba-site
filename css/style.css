@@ -367,8 +367,9 @@ header ul li a:hover::after {
 
 /* =====ヘッダー＞動画===== */
 
-#video-frame{
-  background-color: #f0f0f0; /* フレームの色（お好みで調整） */
+#video-frame {
+  background-color: #f0f0f0;
+  /* フレームの色（お好みで調整） */
   padding: 40px;
 }
 
@@ -1186,17 +1187,18 @@ iframe {
   }
 
   /* ===スマホ用動画=== */
-/* 動画自体のサイズをスマホに最適化（今のままだとPC用の計算式でズレるため） */
-  #video-frame{
-  padding: 0;
-}
+  /* 動画自体のサイズをスマホに最適化（今のままだとPC用の計算式でズレるため） */
+  #video-frame {
+    padding: 0;
+  }
 
-#video {
-  /*天地中央配置*/
-  top: 50%;
-  left: 50%;
-  object-fit: cover;
-}
+
+  #video {
+    /*天地中央配置*/
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+  }
 
 
   /* ==応募の流れ== */

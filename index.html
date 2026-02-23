@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>【公式】旅するリゾートバイトバ女子</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Noto+Serif+JP:wght@200..900&family=Style+Script&family=Zen+Maru+Gothic&display=swap"
+    rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Noto+Serif+JP:wght@200..900&family=Style+Script&display=swap"
     rel="stylesheet">
@@ -53,12 +58,14 @@
       <div class="openbtn"><span></span><span></span><span></span></div>
     </div>
 
+
+
     <div class="slide">
       <!-- <div class="slide-inner">
         <img src="images/slide/top-slide1.jpg" alt="リゾートバイト女子">
       </div> -->
       <div class="slide-contents">
-        <p class="slider-sub">\ 旅するように働こう！ /</p>
+        <p class="slider-sub">憧れの沖縄で旅するように働こう！</p>
         <p class="slider-title">沖縄リゾートバイト</p>
         <span class="sub">寮完備案件あり！</span>
         <span class="sub">未経験大歓迎！</span>
@@ -78,12 +85,35 @@
           rel="noopener noreferrer">
           <img src="images/flow-icon/lineCTA.gif" alt="ライン限定！りぞば情報はこちら">
         </a>
-        <a href="https://www.tiktok.com/@rizobagirl_vlog?lang=ja-JP" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.tiktok.com/@rizobagirl_vlog?lang=ja-JP" target="_blank" rel="noopener noreferrer"
+          class="no-img">
           <img src="images/tiktokCTA.gif" alt="TikTok随時更新中！">
         </a>
-        <a href="https://www.instagram.com/rizobagirl_okinawa_vlog/?hl=ja"><img src="images/flow-icon/instaCTA.gif"
-            alt="Instagramはじめました"></a>
+        <a href="https://www.instagram.com/rizobagirl_okinawa_vlog/?hl=ja" class="no-img"><img
+            src="images/flow-icon/instaCTA.gif" alt="Instagramはじめました"></a>
       </div>
+    </div>
+
+    <div id="video-frame">
+      <div class="video-area">
+        <video id="video" poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+          <!--
+  poster：動画ファイルが利用できない環境で代替表示される画像
+  webkit-playsinline：iOS 9までのSafari用インライン再生指定
+  playsinline：iOS 10以降のSafari用インライン再生指定
+  muted：音声をミュートさせる
+  autoplay：動画を自動再生させる
+  loop：動画をループさせる
+  controls：コントロールバーを表示する
+  -->
+          <source src="video/rizoba.MP4" type="video/mp4">
+          <source src="video/rizoba.ogv" type="video/ogv">
+          <source src="video/movie.webm" type="video/webm">
+          <p>動画を再生できる環境ではありません。</p>
+        </video>
+        <!--/video-area-->
+      </div>
+
     </div>
   </header>
 
@@ -92,34 +122,8 @@
 
   <!-- ここからメイン -->
   <main class="container">
-    <section class="company">
-      <div class="inner">
-        <h2 class="intro_lead">
-          旅するように働く<br>
-          初めてのリゾバ、沖縄から始めよう！
-        </h2>
-        <p class="intro_p">
-          沖縄の青い海、ゆったり流れる島時間、<br>
-          そこで始まるのは「働く」と「暮らす」が溶け合う毎日。<br>
-
-          「リゾートバイトって不安…」<br>
-          「一人でも大丈夫かな…？」<br>
-
-          そんな気持ちを抱えるアナタのために、<br>
-          リゾバ女子はリアルな現地情報と安心できる求人だけを集めました。<br>
-
-          仕事が終われば、夕焼けのビーチへ。<br>
-          休日は離島やローカルスポットへふらっと小さな旅。<br>
-
-          ただのアルバイトじゃない、</p>
-        <p class="intro_p_main">人生に残る沖縄リゾバ体験</p>
-        <p>を届けます。</p>
-      </div>
-
-    </section>
 
     <!-- バイトを探す -->
-
     <section id="jobArea">
       <h2 class="title">すぐに仕事を探す
         <span class="em">SEARCH JOB</span>
@@ -340,6 +344,13 @@
 
       <div class="footer-logo">
         <a href="index.html"><img src="images/rizoba-logo-footer.jpg" alt="旅するリゾートバイト女子"></a>
+      </div>
+
+      <div class="footer-icons">
+        <a href="https://www.tiktok.com/@rizobagirl_vlog?lang=ja-JP" target="_blank"><i
+            class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/rizobagirl_okinawa_vlog/?hl=ja" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
       </div>
 
       <nav class="footer-nav">

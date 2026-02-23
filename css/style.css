@@ -184,7 +184,7 @@ header .header_inner {
 
 /* テキストの装飾（すでにある記述を活かす） */
 .slider-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 120px;
   font-weight: 900;
   color: #fff;
@@ -195,7 +195,7 @@ header .header_inner {
 }
 
 .slider-sub {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 50px;
   color: #fff;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
@@ -203,11 +203,12 @@ header .header_inner {
 }
 
 .sub {
-  font-size: 35px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 45px;
   color: #FFF;
-  padding: 15px 10px 15px 15px;
+  padding: 30px 15px 30px 15px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50px;
+  border-radius: 30px;
   background-color: rgba(0, 153, 204, 0.6);
 }
 
@@ -364,6 +365,40 @@ header ul li a:hover::after {
 }
 
 
+/* =====ヘッダー＞動画===== */
+
+#video-frame{
+  background-color: #f0f0f0; /* フレームの色（お好みで調整） */
+  padding: 40px;
+}
+
+
+.video-area {
+  height: 100vh;
+  /*高さを全画面にあわせる*/
+  width: 100%;
+  /*高さを全画面にあわせる*/
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+
+}
+
+#video {
+  /*天地中央配置*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+
 
 
 /* ここからメイン */
@@ -438,7 +473,7 @@ body #jobArea {
 }
 
 #jobArea .inner .jobBtns .first-button {
-  width: 300px;
+  width: 250px;
   color: #fff;
   line-height: 80px;
   text-align: center;
@@ -652,6 +687,11 @@ body #flow .flow-item {
   text-align: center;
 }
 
+#footer .footer-icons a {
+  font-size: 28px;
+  color: #fff;
+  padding: 25px;
+}
 
 /* フッター＞ナビ */
 #footer .footer-nav ul {
@@ -928,7 +968,7 @@ table tr td {
   line-height: 40px;
 }
 
-iframe{
+iframe {
   width: 100%;
   max-width: 1200px;
   height: auto;
@@ -953,6 +993,15 @@ iframe{
 
 /* レスポンシブ（スマホ） */
 @media (max-width: 768px) {
+
+  header .header_inner {
+    background-color: transparent;
+    justify-content: flex-end;
+  }
+
+  header h1 {
+    display: none;
+  }
 
   header nav {
     z-index: 100;
@@ -982,13 +1031,6 @@ iframe{
     right: 0;
   }
 
-  /* ボタンだけはメニューより上にいてほしいので、これだけに z-index を指定 */
-  .openbtn {
-    display: block;
-    position: relative;
-    /* relative以上の指定が必要 */
-    z-index: 110;
-  }
 
 
   /*==================================================
@@ -998,13 +1040,16 @@ iframe{
   .openbtn {
     /*ボタン内側の基点となるためrelativeを指定。
 追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
-    position: relative;
+    position: fixed;
     background: #57a2c7;
     cursor: pointer;
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    margin-top: 10px;
+    display: block;
+    /* relative以上の指定が必要 */
+    z-index: 110;
+    margin: 5px 5px 0 0;
   }
 
   /*ボタン内側*/
@@ -1067,33 +1112,56 @@ iframe{
   /* スライドショー装飾 */
 
   .slider-item {
-    height: 50vh;
+    height: 100svh;
+    /* 画面いっぱいに広げる */
   }
-
-  .slide-contents .slider-title {
-    font-size: 32px;
-    /* スマホに適切なサイズ */
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-
-  .slide-contents .slider-sub {
-    font-size: 16px;
-  }
-
-  /* 3つの条件ラベル部分 */
-  .slide-contents .sub {
-    font-size: 12px;
-    padding: 4px 10px;
-    display: inline-block;
-    /* 横幅が足りない時に折り返せるように */
-  }
-
 
   .slide-contents {
     position: absolute;
     /* 絶対配置 */
-    top: 30%;
+    top: 50%;
+  }
+
+  .slide-contents .slider-title {
+    font-size: 50px;
+    font-weight: 900;
+    /* スマホに適切なサイズ */
+    margin-bottom: 10px;
+    padding: 20px;
+    /* わずかに文字の間隔を狭める（詰める）と力強く見えます */
+  }
+
+  .slide-contents .slider-sub {
+    font-size: 36px;
+  }
+
+  /* 3つの条件ラベル部分 */
+  .slide-contents .sub {
+    font-size: 24px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 19px 20px;
+  }
+
+
+  /*　背景画像設定　*/
+
+  .slider-item01 {
+    background: url(../images/slide-sp/hunakura.jpg);
+    background-size: cover;
+  }
+
+  .slider-item02 {
+    background: url(../images/slide-sp/ryukyumura.jpg);
+    background-size: cover;
+
+  }
+
+  .slider-item03 {
+    background: url(../images/slide-sp/valliosa.jpg);
+    background-size: cover;
+
   }
 
 
@@ -1103,57 +1171,18 @@ iframe{
     padding: 50px 0;
   }
 
-  .icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* 横に2列の枠を作る */
-    gap: 12px;
-    /* ボタン同士の隙間 */
-    padding-top: 30px;
-    /* 左右に余白を作る */
-    max-width: 280px;
-    /* 広がりすぎ防止 */
-  }
-
-  /* 1番目のボタン（LINE）を2列分ぶち抜いて横長に見せる */
-  .icons a:first-child {
-    grid-column: 1 / 3;
-  }
-
-  /* 画像のサイズ調整 */
   .icons img {
-    width: 100%;
     /* 親の枠いっぱいに広げる */
     max-width: 100%;
-    /* 400px制限を解除 */
-    height: auto;
-    /* アスペクト比を維持 */
-    object-fit: cover;
-    /* 画像が歪まないように調整 */
   }
 
+  .icons .no-img {
+    display: none;
+  }
 
   section .title {
     font-size: 35px;
   }
-
-
-  /* ==事業所紹介== */
-  .company .inner h2 {
-    font-size: 27px;
-    line-height: 40px;
-  }
-
-  .company .inner p {
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  .company .inner .intro_p_main {
-    font-size: 25px;
-  }
-
-
 
 
   /* ==応募の流れ== */
@@ -1245,20 +1274,20 @@ iframe{
 
 
   /* ===詳細ページ＞求人情報=== */
-table tr {
-  line-height: 30px;
-}
+  table tr {
+    line-height: 30px;
+  }
 
-table tr th {
-  width: 20%;
-  font-size: 12px;
-  background-color: #F2F2F3;
-}
+  table tr th {
+    width: 20%;
+    font-size: 12px;
+    background-color: #F2F2F3;
+  }
 
-table tr td {
-  font-size: 12px;
-  line-height: 25px;
-}
+  table tr td {
+    font-size: 12px;
+    line-height: 25px;
+  }
 
 
 }

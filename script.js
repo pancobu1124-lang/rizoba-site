@@ -41,10 +41,8 @@ $('.slider').slick({
 		arrows: true,//左右の矢印あり
 		prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
 		nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-		dots: true,//下部ドットナビゲーションの表示
         pauseOnFocus: false,//フォーカスで一時停止を無効
         pauseOnHover: false,//マウスホバーで一時停止を無効
-        pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
 });
 
 

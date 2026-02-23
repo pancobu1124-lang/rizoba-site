@@ -473,7 +473,7 @@ body #jobArea {
 }
 
 #jobArea .inner .jobBtns .first-button {
-  width: 250px;
+  width: 220px;
   color: #fff;
   line-height: 80px;
   text-align: center;
@@ -692,6 +692,7 @@ body #flow .flow-item {
   color: #fff;
   padding: 25px;
 }
+
 
 /* フッター＞ナビ */
 #footer .footer-nav ul {
@@ -1183,6 +1184,7 @@ iframe {
   section .title {
     font-size: 35px;
   }
+
 
 
   /* ==応募の流れ== */

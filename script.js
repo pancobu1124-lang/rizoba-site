@@ -1,5 +1,16 @@
 // //////ついてくるスクロール
 
+// トップ＞タイトルアニメーション //
+const CLASSNAME = "-visible";
+const TIMEOUT = 1500;
+const $target = $(".slider-title");
+
+setInterval(() => {
+  $target.addClass(CLASSNAME);
+}, TIMEOUT * 0);
+
+
+
 //スクロールすると上部に固定させるための設定を関数でまとめる
 function FixedAnime() {
 	var headerH = $('#header').outerHeight(true);
@@ -60,6 +71,9 @@ $('.works-slide').slick({
 		variableWidth: true,//幅の違う画像の高さを揃えて表示
 		dots: true,//下部ドットナビゲーションの表示
 	});
+
+
+
 
 
 

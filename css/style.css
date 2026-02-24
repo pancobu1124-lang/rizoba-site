@@ -116,6 +116,20 @@ header .header_inner {
   background: url(../images/slide/topomg3.png);
 }
 
+.slider-item04 {
+  background: url(../images/slide/topimg1.png);
+
+}
+
+.slider-item05 {
+  background: url(../images/slide/topimg2.png);
+
+}
+
+.slider-item06 {
+  background: url(../images/slide/topomg3.png);
+
+}
 
 .slider-item {
   width: 100%;
@@ -184,14 +198,63 @@ header .header_inner {
 
 /* テキストの装飾（すでにある記述を活かす） */
 .slider-title {
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Dela Gothic One", sans-serif;
+  ;
   font-size: 120px;
-  font-weight: 900;
+  font-weight: lighter;
   color: #fff;
   background-color: rgba(0, 153, 204, 0.6);
   padding: 15px 0 30px;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 50px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.slider-title span {
+  display: inline-block;
+  transform: translate(0, 110%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s;
+  background: -webkit-linear-gradient(-45deg, #fed878 0%, #fa505e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* 柔らかい影を追加 */
+}
+
+.slider-title.-visible span {
+  transform: translate(0, 0);
+}
+
+.slider-title span:nth-child(2) {
+  transition-delay: 0.06s;
+}
+
+.slider-title span:nth-child(3) {
+  transition-delay: 0.12s;
+}
+
+.slider-title span:nth-child(4) {
+  transition-delay: 0.18s;
+}
+
+.slider-title span:nth-child(5) {
+  transition-delay: 0.30s;
+}
+
+.slider-title span:nth-child(6) {
+  transition-delay: 0.36s;
+}
+
+.slider-title span:nth-child(7) {
+  transition-delay: 0.42s;
+}
+
+.slider-title span:nth-child(8) {
+  transition-delay: 0.48s;
+}
+
+.slider-title span:nth-child(9) {
+  transition-delay: 0.54s;
 }
 
 .slider-sub {
@@ -211,6 +274,7 @@ header .header_inner {
   border-radius: 30px;
   background-color: rgba(0, 153, 204, 0.6);
 }
+
 
 
 
@@ -1125,16 +1189,16 @@ iframe {
   }
 
   .slide-contents .slider-title {
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 60px;
+    font-weight: normal;
     /* スマホに適切なサイズ */
     margin-bottom: 10px;
-    padding: 20px;
+    padding: 24px;
     /* わずかに文字の間隔を狭める（詰める）と力強く見えます */
   }
 
   .slide-contents .slider-sub {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   /* 3つの条件ラベル部分 */
@@ -1143,28 +1207,42 @@ iframe {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    padding: 19px 20px;
+    padding: 20px 20px;
   }
 
 
   /*　背景画像設定　*/
 
   .slider-item01 {
-    background: url(../images/slide-sp/hunakura.jpg);
+    background: url(../images/slide-sp/slide-sp1.jpg);
     background-size: cover;
   }
 
   .slider-item02 {
-    background: url(../images/slide-sp/ryukyumura.jpg);
+    background: url(../images/slide-sp/slide-sp2.jpg);
     background-size: cover;
-
   }
 
   .slider-item03 {
-    background: url(../images/slide-sp/valliosa.jpg);
+    background: url(../images/slide-sp/slide-sp3.jpg);
     background-size: cover;
-
   }
+
+  .slider-item04 {
+    background: url(../images/slide-sp/slide-sp4.jpg);
+    background-size: cover;
+  }
+
+  .slider-item05 {
+    background: url(../images/slide-sp/slide-sp6.jpg);
+    background-size: cover;
+  }
+
+  .slider-item06 {
+    background: url(../images/slide-sp/slide-sp5.jpg);
+    background-size: cover;
+  }
+
 
 
 

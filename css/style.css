@@ -214,7 +214,7 @@ header .header_inner {
 .slider-title span {
   display: inline-block;
   transform: translate(0, 110%);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
   background: -webkit-linear-gradient(-45deg, #fed878 0%, #fa505e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1170,7 +1170,7 @@ iframe {
   }
 
   .slide-contents .slider-title {
-    font-size: 50px;
+    font-size: 38px;
     font-weight: normal;
     /* スマホに適切なサイズ */
     margin-bottom: 10px;
@@ -1179,16 +1179,18 @@ iframe {
   }
 
   .slide-contents .slider-sub {
-    font-size: 23px;
+    font-size: 20px;
+    font-weight: bold;
   }
 
   /* 3つの条件ラベル部分 */
   .slide-contents .sub {
-    font-size: 20px;
+    font-size: 18px;
     display: block;
     width: fit-content;
     margin: 0 auto;
-    padding: 18px;
+    padding: 15px;
+    margin-bottom: 3px;
   }
 
 

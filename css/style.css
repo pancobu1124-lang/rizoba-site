@@ -1169,32 +1169,26 @@ iframe {
     /* 画面いっぱいに広げる */
   }
 
-  .slide-contents {
-    position: absolute;
-    /* 絶対配置 */
-    top: 50%;
-  }
-
   .slide-contents .slider-title {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: normal;
     /* スマホに適切なサイズ */
     margin-bottom: 10px;
-    padding: 24px;
+    padding: 15px;
     /* わずかに文字の間隔を狭める（詰める）と力強く見えます */
   }
 
   .slide-contents .slider-sub {
-    font-size: 30px;
+    font-size: 23px;
   }
 
   /* 3つの条件ラベル部分 */
   .slide-contents .sub {
-    font-size: 24px;
+    font-size: 20px;
     display: block;
     width: fit-content;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 18px;
   }
 
 

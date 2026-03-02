@@ -1159,7 +1159,7 @@ iframe {
   }
 
   .slider-title .main-copy{
-    font-size: 29px;
+    font-size: 40px;
     /* スマホに適切なサイズ */
     margin-bottom: 15px;
   }
@@ -1182,6 +1182,8 @@ iframe {
     .slide-contents a img{
       display: block;
       margin: 0 auto;
+      width: 80%;
+      height: auto;
   }
 
   .purupuru {

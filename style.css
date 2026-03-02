@@ -1162,8 +1162,6 @@ iframe {
     font-size: 40px;
     /* スマホに適切なサイズ */
     margin-bottom: 15px;
-    padding: 15px;
-    /* わずかに文字の間隔を狭める（詰める）と力強く見えます */
   }
 
   .slide-contents .slider-sub {
@@ -1184,6 +1182,8 @@ iframe {
     .slide-contents a img{
       display: block;
       margin: 0 auto;
+      width: 80%;
+      height: auto;
   }
 
   .purupuru {

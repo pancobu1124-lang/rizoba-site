@@ -200,51 +200,42 @@ header .header_inner {
 
 
 /* テキストの装飾（すでにある記述を活かす） */
+
 .slider-title {
-font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 900;
   justify-content: center;
-  align-items: center;
-  padding: 20px 0;
+  padding: 20px 0; /* 帯の上下幅 */
+  margin-bottom: 80px;
+  
+  /* スクリーンショットのような鮮やかな水色の半透明帯 */
+  background-color: rgba(0, 153, 204, 0.4);
+  
 }
 
+/* --- メインコピー：オレンジのぷっくり太文字 --- */
 .main-copy {
-  display: inline-block;
-  font-size: 110px;
+display: inline-block;  
+  font-size: 85px; 
   font-weight: 900;
-  font-family: "Zen Maru Gothic", sans-serif;
-  
-  /* 1. ベースの青色グラデーション（透明感を出すために中間を明るく） */
-  background: linear-gradient(
-    180deg, 
-    #7ee1ff 0%,   /* 上部は明るい光 */
-    #01A0E9 50%,  /* 真ん中は鮮やかな青 */
-    #007bb5 100%  /* 下部は少し濃い青で厚みを出す */
-  );
+  /* 文字の間隔を少し広げて、ゆったりとした「抜け感」を出す */
+  letter-spacing: 0.1em;
+
+  /* オレンジのグラデーション（白フチがない分、色はハッキリと） */
+  background: linear-gradient(to bottom, #ffed4a 0%, #ff8e3e 50%, #e85b00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* 2. ぷっくりした質感を出すための多重影（フィルター） */
+  /* 白フチ（-webkit-text-stroke）を削除 */
+
+  /* 影の力だけで「ぷっくり感」と「視認性」を出す */
   filter: 
-    /* 上側に白い光を当てて「照り」を出す */
-    drop-shadow(0 -3px 2px rgba(255, 255, 255, 0.9))
-    /* 下側に濃い青の影を落として「厚み」を出す */
-    drop-shadow(0 4px 0px rgba(0, 123, 181, 1))
-    /* 全体を背景から浮かせる柔らかな白い光 */
-    drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+    /* 文字の下側に濃いオレンジの厚み（これで文字を浮かす） */
+    drop-shadow(0 3px 0px rgba(180, 50, 0, 1))
+    /* ぼんやりとした暗い影を少しだけ敷いて、青い帯の上で文字をくっきりさせる */
+    drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+   }
 
-  letter-spacing: 0.05em;
-  margin-bottom: 50px;
-  }
-
-/* ぷっくり感を強調する動き：少しだけ伸び縮みさせる */
-@keyframes jellyFloat {
-  0%, 100% {
-    transform: translateY(0) scale(1, 1);
-  }
-  50% {
-    transform: translateY(-12px) scale(1.03, 0.97); /* わずかに横に膨らむ動き */
-  }
-}
 
 
 .slider-sub {
@@ -1158,8 +1149,13 @@ iframe {
     /* 画面いっぱいに広げる */
   }
 
+  .slider-title{
+    margin-bottom: 15px;
+    padding: 15px 0 10px 0;
+  }
+
   .slider-title .main-copy{
-    font-size: 40px;
+    font-size: 33px;
     /* スマホに適切なサイズ */
     margin-bottom: 15px;
   }

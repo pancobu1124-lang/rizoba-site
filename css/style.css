@@ -1159,11 +1159,9 @@ iframe {
   }
 
   .slider-title .main-copy{
-    font-size: 55px;
+    font-size: 29px;
     /* スマホに適切なサイズ */
-    margin-bottom: 20px;
-    padding: 15px;
-    /* わずかに文字の間隔を狭める（詰める）と力強く見えます */
+    margin-bottom: 15px;
   }
 
   .slide-contents .slider-sub {
